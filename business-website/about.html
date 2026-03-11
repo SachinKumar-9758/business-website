@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Urban Garden Bistro</title>
+    <meta
+      name="description"
+      content="Learn about the story, team, and values behind Urban Garden Bistro."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">UG</span>
+          <span class="logo-text">Urban Garden Bistro</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-navigation" class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link nav-link-active">About</a></li>
+            <li><a href="services.html" class="nav-link">Menu &amp; Events</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero" aria-labelledby="about-heading">
+        <div class="container narrow">
+          <p class="eyebrow">Our story</p>
+          <h1 id="about-heading">Rooted in the seasons.</h1>
+          <p class="lead">
+            Urban Garden Bistro was born from a simple idea: bring the warmth of a neighborhood
+            garden and the excitement of city dining together on one plate.
+          </p>
+        </div>
+      </section>
+
+      <section class="story" aria-label="Founding story">
+        <div class="container split-grid">
+          <div>
+            <h2>From market stall to bistro</h2>
+            <p>
+              What started as a weekend market stall quickly grew into a full-service restaurant.
+              Our founders, chef Lina and beverage director Marco, shared a love for seasonal
+              produce and honest, ingredient-first cooking.
+            </p>
+            <p>
+              Today, we work directly with small farms and makers to create a menu that changes
+              with the weather, the harvest, and our curiosity.
+            </p>
+          </div>
+          <div>
+            <h2>What we believe</h2>
+            <ul class="feature-list">
+              <li>Food tastes better when you know where it comes from.</li>
+              <li>Dining out should feel welcoming, never intimidating.</li>
+              <li>Small details make a big difference.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="team" aria-labelledby="team-heading">
+        <div class="container">
+          <h2 id="team-heading">Meet the team</h2>
+          <div class="team-grid">
+            <article class="card team-card">
+              <img
+                src="images/optimized/chef.jpg"
+                alt="Chef Lina preparing a seasonal dish in the kitchen"
+                loading="lazy"
+              />
+              <div class="team-card-body">
+                <h3>Chef Lina Park</h3>
+                <p class="team-role">Executive Chef &amp; Co-founder</p>
+                <p>
+                  Lina crafts menus that highlight local ingredients with bright, layered flavors and
+                  playful plating.
+                </p>
+              </div>
+            </article>
+            <article class="card team-card">
+              <img
+                src="images/optimized/bartender.jpg"
+                alt="Marco mixing a cocktail at the bar"
+                loading="lazy"
+              />
+              <div class="team-card-body">
+                <h3>Marco Rivera</h3>
+                <p class="team-role">Beverage Director &amp; Co-founder</p>
+                <p>
+                  Marco leads our cocktail and wine program, focusing on low-waste techniques and
+                  herb-forward flavors.
+                </p>
+              </div>
+            </article>
+            <article class="card team-card">
+              <img
+                src="images/optimized/host.jpg"
+                alt="Host welcoming guests at the restaurant entrance"
+                loading="lazy"
+              />
+              <div class="team-card-body">
+                <h3>Aisha Patel</h3>
+                <p class="team-role">Guest Experience Lead</p>
+                <p>
+                  Aisha makes sure every visit feels personal, from the first hello to the last
+                  dessert.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2 class="footer-heading">Urban Garden Bistro</h2>
+          <p>Barnahal, Mainpuri (205261)</p>
+          <p><a href="tel:+91 8449025020" class="footer-link">(+91) 8449025020</a></p>
+        </div>
+        <div>
+          <h3 class="footer-subheading">Hours</h3>
+          <p>Mon–Thu: 5pm – 10pm</p>
+          <p>Fri–Sat: 5pm – 11pm</p>
+          <p>Sun: Closed</p>
+        </div>
+        <div>
+          <h3 class="footer-subheading">Visit</h3>
+          <a href="about.html" class="footer-link">Our story</a><br />
+          <a href="services.html" class="footer-link">Menu &amp; Events</a><br />
+          <a href="contact.html" class="footer-link">Contact &amp; reservations</a>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        <small>&copy; <span id="year"></span> Urban Garden Bistro. All rights reserved.</small>
+      </p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

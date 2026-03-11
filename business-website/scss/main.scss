@@ -1,0 +1,46 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+:root {
+  --color-primary: #{$primary-color};
+  --color-primary-dark: #{$primary-color-dark};
+  --color-accent: #{$accent-color};
+  --color-bg: #{$bg-color};
+  --color-surface: #{$surface-color};
+  --color-text: #{$text-color};
+  --color-muted: #{$muted-color};
+  --shadow-soft: #{$shadow-soft};
+  --radius-lg: #{$radius-lg};
+  --radius-md: #{$radius-md};
+  --radius-sm: #{$radius-sm};
+  --container-width: #{$container-width};
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.btn {
+  @include button-base;
+}
+
+.card {
+  @include card;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  @include focus-ring;
+}

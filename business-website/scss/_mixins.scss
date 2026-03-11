@@ -1,0 +1,25 @@
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.6rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.98rem;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  text-decoration: none;
+}
+
+@mixin card {
+  background-color: $surface-color;
+  border-radius: $radius-md;
+  padding: 1.4rem 1.5rem;
+  box-shadow: $shadow-soft;
+}
+
+@mixin focus-ring {
+  outline: 2px solid $primary-color;
+  outline-offset: 1px;
+}

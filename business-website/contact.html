@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact &amp; Reservations | Urban Garden Bistro</title>
+    <meta
+      name="description"
+      content="Contact Urban Garden Bistro for reservations, private events, and general inquiries."
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">UG</span>
+          <span class="logo-text">Urban Garden Bistro</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+          <ul id="primary-navigation" class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Menu &amp; Events</a></li>
+            <li><a href="contact.html" class="nav-link nav-link-active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero" aria-labelledby="contact-heading">
+        <div class="container narrow">
+          <p class="eyebrow">Get in touch</p>
+          <h1 id="contact-heading">Reservations, events &amp; questions.</h1>
+          <p class="lead">
+            Use the form below or call us directly. We’ll get back to you as soon as possible.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-layout">
+        <div class="container contact-grid">
+          <section aria-labelledby="visit-heading" class="contact-info">
+            <h2 id="visit-heading">Visit Urban Garden Bistro</h2>
+            <p>
+              Barnahal<br />
+              Mainpuri, 205261
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+91 8449025020" class="text-link">(+91) 8449025020</a><br />
+              Email:
+              <a href="mailto:sachin8976540@gmail.com" class="text-link"
+                >sachin8976540@gmail.com</a
+              >
+            </p>
+            <h3>Parking &amp; transit</h3>
+            <p>
+              Street parking is available after 6pm, and we’re a 5-minute walk from the Central
+              Station stop.
+            </p>
+            <div class="map-placeholder" role="img" aria-label="Map showing the location of Urban Garden Bistro">
+              <p>Map placeholder – replace with embedded map or map image.</p>
+            </div>
+          </section>
+
+          <section aria-labelledby="reservation-heading" class="contact-form-section">
+            <h2 id="reservation-heading">Contact form</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <p class="field-error" id="name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  inputmode="email"
+                />
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="reason">Reason for reaching out</label>
+                <select id="reason" name="reason" required>
+                  <option value="">Please choose one</option>
+                  <option value="reservation">Dinner reservation</option>
+                  <option value="event">Private event</option>
+                  <option value="question">General question</option>
+                </select>
+                <p class="field-error" id="reason-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  minlength="10"
+                ></textarea>
+                <p class="field-error" id="message-error" aria-live="polite"></p>
+              </div>
+
+              <fieldset class="form-group" id="reservation">
+                <legend>Reservation details (optional)</legend>
+                <div class="form-row">
+                  <div>
+                    <label for="date">Preferred date</label>
+                    <input id="date" name="date" type="date" />
+                  </div>
+                  <div>
+                    <label for="time">Preferred time</label>
+                    <input id="time" name="time" type="time" />
+                  </div>
+                  <div>
+                    <label for="guests">Number of guests</label>
+                    <input
+                      id="guests"
+                      name="guests"
+                      type="number"
+                      min="1"
+                      max="20"
+                      inputmode="numeric"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn-primary">Send message</button>
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2 class="footer-heading">Urban Garden Bistro</h2>
+          <p>Barnahal, Mainpuri (205261)</p>
+          <p><a href="tel:+91 8449025020" class="footer-link">(+91) 8449025020</a></p>
+        </div>
+        <div>
+          <h3 class="footer-subheading">Hours</h3>
+          <p>Mon–Thu: 5pm – 10pm</p>
+          <p>Fri–Sat: 5pm – 11pm</p>
+          <p>Sun: Closed</p>
+        </div>
+        <div>
+          <h3 class="footer-subheading">Visit</h3>
+          <a href="about.html" class="footer-link">Our story</a><br />
+          <a href="services.html" class="footer-link">Menu &amp; Events</a><br />
+          <a href="contact.html" class="footer-link">Contact &amp; reservations</a>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        <small>&copy; <span id="year"></span> Urban Garden Bistro. All rights reserved.</small>
+      </p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
+  </body>
+</html>
